@@ -1,0 +1,483 @@
+body
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    margin: 0;
+}
+.custom_checkbox
+{
+    width: 100%;
+    height: 3.5vw;
+    line-height: 2.8vw;
+}
+.custom_checkbox input
+{
+    position: absolute;
+    width: 2.2vw;
+    height: 2.2vw;
+    opacity: 0;
+    user-select: none;
+    cursor: pointer;
+}
+.custom_checkbox input:checked ~ .custom_checkbox_checkmark:after
+{
+    /*display: block;*/
+    opacity: 1;
+}
+.custom_checkbox_checkmark
+{
+    position: absolute;
+    display: inline-block;
+    width: 2.2vw;
+    height: 2.2vw;
+    border: 0.2vw solid #629239;
+    border-radius: 50%;
+    background-color: #efefef;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+}
+.custom_checkbox_checkmark:after
+{
+    content: "";
+    position: absolute;
+    /*display: none;*/
+    opacity: 0;
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius: 50%;
+    background-color: #2c2e94;
+    pointer-events: none;
+    left: 0.5vw;
+    top: 0.5vw;
+    transition: opacity 0.15s ease-out;
+}
+.custom_checkbox label
+{
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding-left: 3.5vw;
+    vertical-align: center;
+}
+.custom_button
+{
+    width: 10.6vw;
+    height: 4vw;
+    border-radius: 2vw;
+    background-color: #1888e7;
+    border: 0.3vw solid white;
+    font-family: sans-serif;
+    font-size: 1.7vw;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.15s ease-out;
+}
+.custom_button:focus,
+.custom_button:active
+{
+    outline: none;
+}
+.custom_button:active
+{
+    background-color: #2668a0;
+}
+.custom_button:disabled
+{
+    opacity: 0.5;
+    pointer-events: none;
+}
+#game
+{
+    position: relative;
+    width: 100%;
+    height: 56vw;
+}
+.screen
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#screen_01
+{
+    background: url("../assets/images/RR-Box-Top-G5.jpg") 0 0 / 100% 100%;
+    cursor: pointer;
+}
+#screen_02
+{
+    background: url("../assets/images/screen_bg_01.jpg") 0 0 / 100% 100%;
+    cursor: pointer;
+}
+#screen_02 > div:nth-of-type(1)
+{
+    position: absolute;
+    width: 79vw;
+    height: 50vw;
+    background-color: #92d050;
+    border-radius: 9.5vw;
+    border: 0.5vw solid #5184c1;
+    left: 3vw;
+    top: 2vw;
+}
+#screen_02 > div:nth-of-type(1) h1
+{
+    position: absolute;
+    font-size: 3.3vw;
+    font-weight: bold;
+    margin: 0;
+    left: 31.8vw;
+    top: 9vw;
+}
+#screen_02 > div:nth-of-type(1) p
+{
+    position: absolute;
+    font-size: 2.5vw;
+    margin: 0;
+    width: 86%;
+    left: 7vw;
+    top: 18.5vw;
+}
+#screen_02 > div:nth-of-type(2)
+{
+    position: absolute;
+    width: 35.9vw;
+    height: 15.6vw;
+    background: url("../assets/images/relayracelogo - Copy - Copy.png") 0 0 / cover no-repeat;
+}
+#screen_02 > div:nth-of-type(3)
+{
+    position: absolute;
+    width: 13.9vw;
+    height: 22vw;
+    right: 0;
+    background: url("../assets/images/6lyYIzxiCrN_95_DX374_DY374_CX212_CY334.png") 0 0 / cover no-repeat;
+}
+#screen_03
+{
+    background: url("../assets/images/screen_bg_01.jpg") 0 0 / 100% 100%;
+    pointer-events: none;
+}
+#screen_03 > div
+{
+    position: absolute;
+}
+#screen_03 > div:nth-of-type(1)
+{
+    width: 50.2vw;
+    height: 53vw;
+    background: url("../assets/images/shutterstock_1392837776_2.png") 0 0 / cover no-repeat;
+    left: 27vw;
+    top: 1.6vw;
+}
+#screen_03 > div:nth-of-type(2)
+{
+    width: 35.9vw;
+    height: 15.6vw;
+    background: url("../assets/images/relayracelogo - Copy - Copy.png") 0 0 / cover no-repeat;
+}
+.screen_03__player
+{
+    pointer-events: auto;
+    cursor: pointer;
+    transition: transform 0.15s ease-out;
+}
+.screen_03__player:hover
+{
+    transform: scale(1.1);
+}
+#screen_03 > div:nth-of-type(3)
+{
+    width: 13.9vw;
+    height: 22vw;
+    right: 0;
+    background: url("../assets/images/6lyYIzxiCrN_95_DX374_DY374_CX212_CY334.png") 0 0 / cover no-repeat;
+}
+#screen_03 > div:nth-of-type(4)
+{
+    width: 14.1vw;
+    height: 20vw;
+    background: url("../assets/images/RelayKid01 Vial - Copy.png") 0 0 / cover no-repeat;
+    left: 1.9vw;
+    top: 27vw;
+}
+#screen_03 > div:nth-of-type(5)
+{
+    width: 16.1vw;
+    height: 21.5vw;
+    background: url("../assets/images/RelayKid03 - Copy - Copy.png") 0 0 / cover no-repeat;
+    left: 17.8vw;
+    top: 33vw;
+}
+#screen_03 > div:nth-of-type(6)
+{
+    width: 16.6vw;
+    height: 20.2vw;
+    background: url("../assets/images/RelayKid02 Vial - Copy.png") 0 0 / cover no-repeat;
+    left: 68.5vw;
+    top: 34.4vw;
+}
+#screen_03 > div:nth-of-type(7)
+{
+    width: 12.4vw;
+    height: 17.3vw;
+    background: url("../assets/images/RelayKid04 - Copy - Copy.png") 0 0 / cover no-repeat;
+    left: 85.5vw;
+    top: 30.4vw;
+}
+#screen_04
+{
+    background: url("../assets/images/screen_bg_01.jpg") 0 0 / 100% 100%;
+}
+#screen_04 > div:nth-of-type(1)
+{
+    position: absolute;
+    width: 77.3vw;
+    height: 51.7vw;
+    background: url("../assets/images/Image-19.png") 0 0 / cover no-repeat;
+    left: 1.23vw;
+    top: 2.3vw;
+}
+#questions_cont
+{
+    position: absolute;
+    width: 45vw;
+    left: 17.2vw;
+    top: 16vw;
+}
+#questions_cont div
+{
+    position: relative;
+}
+#questions_cont > label
+{
+    max-height: 10vw;
+    font-size: 2vw;
+    font-weight: bold;
+    overflow: auto;
+}
+#questions_cont > label
+{
+    display: block;
+    margin-bottom: 1.5vw;
+}
+#questions_cont > div
+{
+    font-size: 1.7vw;
+}
+#submit_answer_button
+{
+    position: absolute;
+    left: 35vw;
+}
+#screen_04 > div:nth-of-type(3)
+{
+    position: absolute;
+    width: 13.9vw;
+    height: 22vw;
+    right: 0;
+    background: url("../assets/images/6lyYIzxiCrN_95_DX374_DY374_CX212_CY334.png") 0 0 / cover no-repeat;
+}
+#screen_04 > div:nth-of-type(4)
+{
+    position: absolute;
+    width: 15vw;
+    height: 7.5vw;
+    background-color: #4f81bd;
+    border-radius: 1vw;
+    border: 0.2vw solid #2c2e94;
+    padding: 0.8vw;
+    box-sizing: border-box;
+    right: 3.3vw;
+    top: 21.4vw;
+}
+#screen_04 > div:nth-of-type(4) div
+{
+    text-align: center;
+}
+#screen_04 > div:nth-of-type(4) div:nth-of-type(1)
+{
+    height: 70%;
+}
+#screen_04 > div:nth-of-type(4) span
+{
+   display: inline-block;
+}
+#screen_04 > div:nth-of-type(4) div:nth-of-type(1) span
+{
+    width: 46%;
+    height: 100%;
+    background-color: #808080;
+    outline: 0.2vw solid #2c2e94;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: white;
+    line-height: 4vw;
+}
+#screen_04 > div:nth-of-type(4) div:nth-of-type(1) span:nth-of-type(2)
+{
+    margin-left: 4%;
+}
+#screen_04 > div:nth-of-type(4) div:nth-of-type(2) span
+{
+    width: 50%;
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: white;
+    margin-top: 4%;
+}
+#screen_04 > div:nth-of-type(5)
+{
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    border: 0.3vw solid gray;
+    border-radius: 50%;
+    background-color: #b8bac5;
+    pointer-events: none;
+    right: 6vw;
+    top: 30vw;
+    transition: border 0.15s ease-out;
+}
+.active_dice_cont
+{
+    border: 0.3vw solid green !important;
+}
+#dice
+{
+    position: absolute;
+    width: 6.1vw;
+    height: 6.1vw;
+    pointer-events: auto;
+    cursor: pointer;
+    transform-origin: center center;
+    left: 15%;
+    top: 17%;
+    transition: transform 0.5s ease-out;
+}
+#dice div
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#dice div:nth-of-type(1)
+{
+    background: url("../assets/images/dice-illustration-1.png") 0 0 / cover no-repeat;
+}
+#dice div:nth-of-type(2)
+{
+    background: url("../assets/images/dice_1.png") 0 0 / cover no-repeat;
+}
+#dice div:nth-of-type(3)
+{
+    background: url("../assets/images/dice_5.png") 0 0 / cover no-repeat;
+}
+#dice div:nth-of-type(4)
+{
+    background: url("../assets/images/dice_6.png") 0 0 / cover no-repeat;
+}
+#dice div:nth-of-type(5)
+{
+    background: url("../assets/images/dice_4.png") 0 0 / cover no-repeat;
+}
+#dice div:nth-of-type(6)
+{
+    background: url("../assets/images/dice_5.png") 0 0 / cover no-repeat;
+}
+#dice div:nth-of-type(7)
+{
+    background: url("../assets/images/dice_6.png") 0 0 / cover no-repeat;
+}
+#screen_04 > div:nth-of-type(6)
+{
+    display: none;
+    position: absolute;
+    width: 9.5vw;
+    height: 13.2vw;
+    background: url("../assets/images/6HKR1T2IIzh_95_DX216_DY216_CX139_CY193_2.png") 0 0 / cover no-repeat;
+    left: 84vw;
+    top: 40.5vw;
+}
+#screen_04 > div:nth-of-type(6) p
+{
+    position: absolute;
+    width: 90%;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #2c2e94;
+    pointer-events: none;
+    transform: rotate(7.35deg);
+    text-align: center;
+    left: 1%;
+    top: 60%;
+}
+#player
+{
+    position: absolute;
+    width: 9.8vw;
+    height: 12vw;
+    transform-origin: center center;
+    transition: left 0.15s ease-out, top 0.15s ease-out;
+}
+#player div
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#player div:nth-of-type(1)
+{
+    background: url("../assets/images/player_1.png") 0 0 / cover no-repeat;
+}
+#player div:nth-of-type(2)
+{
+    background: url("../assets/images/player_2.png") 0 0 / cover no-repeat;
+}
+#player div:nth-of-type(3)
+{
+    background: url("../assets/images/player_3.png") 0 0 / cover no-repeat;
+}
+#player div:nth-of-type(4)
+{
+    background: url("../assets/images/player_4.png") 0 0 / cover no-repeat;
+}
+#end_game_screen
+{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+#play_again_button
+{
+    width: 13vw;
+}
+#navigation_buttons_cont
+{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+#prev_screen_button
+{
+    width: 36px;
+    height: 36px;
+    background: url("../assets/images/prev_screen_button.png") 0 0 / cover no-repeat;
+}
+#next_screen_button
+{
+    width: 36px;
+    height: 36px;
+    background: url("../assets/images/next_screen_button.png") 0 0 / cover no-repeat;
+    margin-left: 10px;
+}
+#prev_screen_button:active,
+#next_screen_button:active
+{
+    transform-origin: center;
+    transform: scale(0.95);
+}

@@ -1,0 +1,8 @@
+var questions = 'The plant part that attracts pollinators?---stamen---petals---pistil---ovary---4.L.16.4---2|||Which term below is used to describe the small root that appears from a seed?---seed dispersal---fertilization---germination---pollination---4.L.16.4---3|||Which of the following is not an example of a non-flowering plant?---pine trees---roses---mosses---ferns---4.L.16.4---2|||Which of the following is the second step in the life cycle of a butterfly?---egg---pupal stage---caterpillar stage---larval stage---4.L.16.4---4|||Which is defined as the completion of stages that living things will go through?---a change---a life cycle---a formation---an adolescence---4.L.16.4---2|||The term used to describe flowering plants?---angiosperms---gymnosperms---mosses---liverworts---4.L.16.4---1|||Between which stages in their life cycle would the salamander form lungs to breathe?---between egg mass and larva stages---between adult and egg mass stages---between young salamander and adult---between larva and young salamander---4.L.16.4---4|||At what stage in their life cycles can plants and animals reproduce?---as a seed---during germination---as a seedling---as a mature adults---4.L.16.4---4|||How do non-flowering plants reproduce?---wind blows pollen from male cones to the female cones---with spores that form under the needles---water and wind carry seeds from one plant to another---when needles fall to the ground---4.L.16.4---2|||What is the beginning stage of the life cycle for both the crocodile and fly?---Nymph---Larva---Egg---Pupa---4.L.16.4---3';
+
+questions = questions.split("|||");
+
+for (var i = 0; i < questions.length; i++)
+{
+	questions[i] = questions[i].split("---");
+}

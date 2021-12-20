@@ -1,0 +1,8 @@
+var questions = 'Which of the following animals is best adapted for cold climates?---a buffalo---a deer---a parrot---a rattle snake---5.L.17.2---2|||Which of the following plants and animals are best adapted to live in a desert climate?---a cactus and a scorpion---mushrooms and a fox---an oak tree and a woodpecker---a pine tree and a deer---5.L.17.2---1|||Which biome is the best-suited climate for a monkey?---desert---grasslands---ocean---tropical rainforest---5.L.17.2---4|||Which of the following organisms would be least likely to survive in a tropical rain forest?---a monkey---an orchid---a parrot---a polar bear---5.L.17.2---4|||Which of the following least affects the population densities of ecosystems?---the amount of light---the amount of water---the size of the animals---the temperature---5.L.17.2---3|||Which biome is the best-suited for the adaptations of a prairie dog?---desert---grasslands---ocean---tropical rainforest---5.L.17.2---2|||Which biome is the best-suited climate for a monkey?---desert---grasslands---ocean---tropical rainforest---5.L.17.2---4|||Which environment is the best-suited for plants that can survive in cold water with a minimal amount of sunlight?---desert---grassland---ocean---tropical rainforest---5.L.17.2---3|||Which of these could limit a population’s ability to grow in an area?---increase in food supply---decrease in the amount of living space---decrease in predators---changes in climate---5.L.17.2---2|||Which of these is a resource that plant populations will not be in competition for?---food---space---sunlight---air---5.L.17.2---1';
+
+questions = questions.split("|||");
+
+for (var i = 0; i < questions.length; i++)
+{
+	questions[i] = questions[i].split("---");
+}

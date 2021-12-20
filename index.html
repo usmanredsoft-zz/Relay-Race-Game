@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Under Grade 5 Games (Relay Race)</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="game" style="display: none">
+
+    <div id="screen_01" class="screen"></div>
+
+    <div id="screen_02" class="screen">
+
+        <div>
+
+            <h1>How to Play Relay Race</h1>
+            <p>Begin by rolling the dice at the bottom right corner of the screen, by clicking it. Based on the
+                number of dots on the die, you must either draw a card containing a question or roll the dice
+                again. A point is earned each time a question is answered correctly.  If the question is answered incorrectly, the computer wins a point. Remember, you must outscore the computer to win the game.</p>
+        </div>
+
+        <div></div>
+        <div></div>
+
+    </div>
+
+    <div id="screen_03" class="screen">
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div id="screen_03__player_1" class="screen_03__player"></div>
+        <div id="screen_03__player_2" class="screen_03__player"></div>
+        <div id="screen_03__player_3" class="screen_03__player"></div>
+        <div id="screen_03__player_4" class="screen_03__player"></div>
+
+    </div>
+
+    <div id="screen_04" class="screen">
+
+        <div></div>
+
+        <div id="questions_cont">
+
+            <label>Which of the following is least likely to make an experiment trustworthy?</label>
+
+            <div>
+                <div class="custom_checkbox">
+                    <input type="radio" id="answer_01" name="questions_radiobuttons" checked>
+                    <span class="custom_checkbox_checkmark"></span>
+                    <label for="answer_01">collecting measurements</label>
+                </div>
+                <div class="custom_checkbox">
+                    <input type="radio" id="answer_02" name="questions_radiobuttons">
+                    <span class="custom_checkbox_checkmark"></span>
+                    <label for="answer_02">having several trials</label>
+                </div>
+                <div class="custom_checkbox">
+                    <input type="radio" id="answer_03" name="questions_radiobuttons">
+                    <span class="custom_checkbox_checkmark"></span>
+                    <label for="answer_03">having several variables</label>
+                </div>
+                <div class="custom_checkbox">
+                    <input type="radio" id="answer_04" name="questions_radiobuttons">
+                    <span class="custom_checkbox_checkmark"></span>
+                    <label for="answer_04">recording all steps</label>
+                </div>
+
+                <button id="submit_answer_button" class="custom_button">SUBMIT</button>
+
+            </div>
+
+        </div>
+
+        <div></div>
+
+        <div>
+
+            <div>
+                <span id="player_scores_label">0</span><!--
+                        --><span id="computer_scores_label">0</span>
+            </div>
+            <div>
+                <span>PLAYER</span><!--
+                        --><span>COMPUTER</span>
+            </div>
+
+        </div>
+
+        <div>
+            <div id="dice">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div>
+            <p>SC.5.N.2.2</p>
+        </div>
+
+        <div id="player">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+    </div>
+
+    <div id="end_game_screen" class="screen">
+        <button id="play_again_button" class="custom_button">Play Again</button>
+    </div>
+
+    <div id="navigation_buttons_cont">
+        <button id="prev_screen_button" class="custom_button"></button>
+        <button id="next_screen_button" class="custom_button"></button>
+    </div>
+
+    <audio id="bg_music" src="assets/sounds/532504_preview.mp3" loop></audio>
+
+</div>
+
+<script src="js/questions/questions_3.L.15.2.js"></script>
+<script src="js/game.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+var questions = 'Which of the following describes an animal that eats only plants?---carnivore---herbivore---omnivore---producer---4.L.17.3---2|||Which of the following describes an animal that eats only meat?---carnivore---herbivore---omnivore---producer---4.L.17.3---1|||Which of the following describes an animal that eats both plants and animals?---carnivore---herbivore---omnivore---producer---4.L.17.3---3|||Which term best describes an animal that eats plants?---consumer---decomposer---producer---producer, consumer, and decomposer---4.L.17.3---1|||Which of the following are classified as protists?---alligators and crocodiles---grass, flowers, and trees---mold, mushrooms, and algae---reptiles, mammals, and birds---4.L.17.3---3|||Which organism gets its energy from the remains of decaying organisms?---consumer---decomposer---producer---producer, consumer, and decomposer---4.L.17.3---2|||Which of the following is an example of a food chain?---human —> flower —> tree---mouse —> snake —> hawk---plant —> grasshopper —> grass---rabbit —> fox —> flowers---4.L.17.3---2|||Which of the following is in the correct order as seen in a food chain?---carnivore —> herbivore —> plants---herbivore —> omnivore —> plants---plants —> carnivore —> herbivore---plants —> herbivore —> carnivore---4.L.17.3---4|||Which of the following is an example of a decomposer?---an alligator---a mocking bird---a mushroom---a seal---4.L.17.3---3|||What happens when decomposers break down dead plants and animals?---all of the plants in the area die---the animals are reborn---the decomposer dies---the nutrients and minerals enrich the soil---4.L.17.3---4';
+
+questions = questions.split("|||");
+
+for (var i = 0; i < questions.length; i++)
+{
+	questions[i] = questions[i].split("---");
+}

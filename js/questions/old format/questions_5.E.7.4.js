@@ -1,0 +1,8 @@
+var questions = 'Which of the following is not a form of precipitation?---hail---rain---snow---thunder---5.E.7.4---4|||Which term is defined as the condition of the atmosphere at a particular place and time?---temperature---pressure---weather---humidity---5.E.7.4---3|||Which term is defined as the amount of water vapor in the air?---temperature---pressure---weather---humidity---5.E.7.4---4|||Which term is defined as the measure of the weight of the gases in the air?---temperature---pressure---weather---humidity---5.E.7.4---2|||Which environment has little to no humidity with very little rainfall?---swamps---deserts---mountains---oceans---5.E.7.4---2|||Which climate zone receives very little radiation causing low temperatures that forms ice throughout the year?---Tropical Climate Zone---Temperate Climate Zone---Polar Climate Zone---Subtropical Climate Zone---5.E.7.4---3|||Which of these is defined as the amount of  water vapor in the atmosphere?---wind speed and direction---precipitation---air pressure---humidity---5.E.7.4---4|||What term is used to describe precipitation in the form of ice crystals?---snow---hail---sleet---rain---5.E.7.4---1|||What causes dew to form on grass?---condensation---evaporation---precipitation---runoff---5.E.7.4---1|||Which of the following is most responsible for wind and the movement of air masses?---a difference in humidity---a difference in atmospheric pressure---a difference in temperature---a difference in weather---5.E.7.4---2';
+
+questions = questions.split("|||");
+
+for (var i = 0; i < questions.length; i++)
+{
+	questions[i] = questions[i].split("---");
+}

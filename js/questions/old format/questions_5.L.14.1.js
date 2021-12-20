@@ -1,0 +1,8 @@
+var questions = 'The bones of vertebrate animals are commonly referred to as which of the following organs?---stomach---heart---muscles---skeleton---5.L.14.1---4|||The brain and the spinal cord are a part of which body system?---circulatory---digestive---excretory---nervous---5.L.14.1---4|||The intestines are a part of which body system?---circulatory---digestive---nervous---skeletal---5.L.14.1---2|||Which of the following best describes the function of the lungs?---exhale oxygen and carbon dioxide---inhale carbon dioxide and exhale oxygen---inhale oxygen and carbon dioxide---inhale oxygen and exhale carbon dioxide---5.L.14.1---4|||Which of the following is the best classification of a kidney?---cell---organ---organ system---tissue---5.L.14.1---2|||The function of the kidneys includes which of the following?---changes food into nutrients---connects organs to your brain---protects the internal organs---removes waste from the body---5.L.14.1---4|||Which organ controls all of the human biology systems?---brain---esophagus---intestines---lungs---5.L.14.1---1|||Which of the following protects the organs and tissues of the body?---brain---gall bladder---lungs---skin---5.L.14.1---4|||Which of the following organs pumps blood through your body?---diaphragm---heart---liver---lung---5.L.14.1---2s|||Which of the following organs is involved in the exchange of gases?---diaphragm---heart---liver---lungs---5.L.14.1---4';
+
+questions = questions.split("|||");
+
+for (var i = 0; i < questions.length; i++)
+{
+	questions[i] = questions[i].split("---");
+}

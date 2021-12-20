@@ -1,0 +1,8 @@
+var questions = 'Which method can be used to separate sugar from water?---boiling---sedimentation---magnetic separation---flotation---5.P.9.1---1|||Which term is defined as one or more substances being dissolved in another substance?---compound---element---mixture---solution---5.P.9.1---4|||Which phase change takes place when the car windows fog up?---condensation---evaporation---freezing---melting---5.P.9.1---1|||Which phase change takes place when a liquid changes to a solid?---condensation---evaporation---freezing---melting---5.P.9.1---3|||Which phase change takes place when water is boiled?---condensation---evaporation---freezing---melting---5.P.9.1---2|||Which type of change occurs when matter is changed from one state to another?---chemical change---physical change---mechanical change---nuclear change---5.P.9.1---2|||Which type of change occurs when an iron pole rusts?---chemical change---physical change---mechanical change---nuclear change---5.P.9.1---1|||Which of the following does not represent a chemical change caused by an increase in temperature?---baking a cake---slicing bread---frying eggs---popping popcorn---5.P.9.1---2|||Cooking the eggs and pancakes is an example of which type of change?---a chemical property---a physical change---a chemical change---a change in state---5.P.9.1---3|||Which of the following changes can be reversed?---a tarnished piece of metal---a liquid formed by gas---a rotting apple---a rusting swing---5.P.9.1---2';
+
+questions = questions.split("|||");
+
+for (var i = 0; i < questions.length; i++)
+{
+	questions[i] = questions[i].split("---");
+}

@@ -1,0 +1,8 @@
+var questions = 'Which type of rock is formed from the cooling of magma?---igneous rock---metamorphic rock---sedimentary rock---sediments---4.E.6.2---1|||Which type of rock is formed from a great amount of heat and pressure?---igneous rock---metamorphic rock---sedimentary rock---sediments---4.E.6.2---2|||Which type of rock is formed when fossilized organisms are pressed and cemented together?---igneous rock---metamorphic rock---sedimentary rock---sediments---4.E.6.2---3|||Which property of matter describes a mineral\'s resistance to being scratched?---cleavage---streak---hardness---luster---4.E.6.2---3|||Which property of matter describes the powder color left behind on a porcelain tile?---cleavage---streak---hardness---luster---4.E.6.2---2|||Which of the following is not a property used to identify minerals?---luster---fossilization---cleavage---streak---4.E.6.2---2|||Between which two planets can the asteroid belt be found?---Jupiter and Saturn---Mars and Jupiter---Uranus and Neptune---Venus and Earth---4.E.6.2---2|||Form of physical weathering that results in crystals being formed eventually causing rocks to crack?---ice wedging---root wedging---salt wedging---temperature changes---4.E.6.2---3|||Which type of rock is most likely formed during the formation of a volcano?---sedimentary rock---metamorphic rock---igneous rock---large boulders---4.E.6.2---3|||Which of these is not a mineral?---talc---quartz---limestone---pyrite---4.E.6.2---3';
+
+questions = questions.split("|||");
+
+for (var i = 0; i < questions.length; i++)
+{
+	questions[i] = questions[i].split("---");
+}

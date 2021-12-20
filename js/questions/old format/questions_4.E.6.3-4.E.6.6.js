@@ -1,0 +1,8 @@
+var questions = 'What is the best definition of a natural resource?---resources produced by humans---resources produced in a factory---resources produced by nature---resources used by humans---4.E.6.6---3|||Which of the following are renewable resources found readily in the State of Florida?---Floridan Aquifer---Silicon---Limestone---Phosphate---4.E.6.6---1|||Which of the following is not a renewable resource?---oil---plants---sunlight---water---4.E.6.6---1|||Which of the following is a nonrenewable resource found in the State of Florida?---Solar Energy---Wind---Limestone---Water---4.E.6.6---3|||Which of the following terms is used to describe materials made by nature?---natural resources---energy---inexhaustible---recyclables---4.E.6.6---1|||Which is not a possible issue people may create by using oil for energy?---Engineers will have unlimited sources of oil.---Drilling for oil harms the  environment.---Oil spills pollute our water sources.---Oil drills are expensive to maintain.---4.E.6.6---1|||What may happen as more people choose natural gas as a source of energy?---There will be no effects.---There will be more natural gas sources.---There will be not as much natural gas available and its price will rise.---Natural gas will become easier to find.---4.E.6.6---3|||How is phosphorus mainly used?---to build roads---to produce fertilizer---to preserve food---to make concrete---4.E.6.6---2|||Which of the following natural resources has the greatest supply?---sunlight---coal---natural gas---oil---4.E.6.6---1|||Which of these Florida resources is renewable?---limestone---silicon---water---oil---4.E.6.6---3';
+
+questions = questions.split("|||");
+
+for (var i = 0; i < questions.length; i++)
+{
+	questions[i] = questions[i].split("---");
+}

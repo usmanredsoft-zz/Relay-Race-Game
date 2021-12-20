@@ -1,0 +1,8 @@
+var questions = 'Which piece of glassware can be used to separate liquids from small solids?---a compass---a funnel---a magnet---a magnifying lens---5.P.8.3---2|||Which of the following instruments can be used to separate iron fillings from sulphur powder?---a filter---a funnel---a magnet---a sifter---5.P.8.3---3|||Which of the following is not a solution?---ice tea---lemonade---oranges---coffee---5.P.8.3---3|||Which of the following will not help speed up the dissolving process?---increasing the solvent temperature---making the particles smaller---stirring the solution faster---decreasing the solvent temperature---5.P.8.3---4|||Which of the following separates mixtures based on their densities?---sieving---sedimentation---flotation---filtration---5.P.8.3---3|||Which of the following separates different sized solids through sifting?---sieving---sedimentation---flotation---filtration---5.P.8.3---1|||The statements below are true about mixtures except which of the following?---mixtures are made of 2 or more  substances---each part of a mixture keeps its own properties---mixtures can be separated---mixtures have parts that can be completely combined---5.P.8.3---4|||Which of the following substances will dissolve in water?---pepper---sand---salt---flour---5.P.8.3---3|||Which of the following will not make powdered drink mix dissolve faster?---cool water---hot water---stirring the mixture faster---crushing the powder into smaller pieces---5.P.8.3---1|||Which tool will be best to separate the peanuts from the party mix?--- a magnet---a pair of hands---a sieve---a funnel---5.P.8.3---2';
+
+questions = questions.split("|||");
+
+for (var i = 0; i < questions.length; i++)
+{
+	questions[i] = questions[i].split("---");
+}

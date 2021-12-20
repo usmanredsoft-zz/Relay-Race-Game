@@ -1,0 +1,8 @@
+var questions = 'Which of the following forms of energy does a burning candle give off?---heat and light---solar and sound---sound and chemical---sound and light---5.P.10.1---1|||What do a light bulb, a lit candle, and the sun have in common?---they all give off light and heat---they all give off sound---they are all examples of electricity---they rely on each other---5.P.10.1---1|||Which form of energy is also called thermal energy?---electrical---heat---light---wind---5.P.10.1---2|||Which form of energy is produced from vibrations?---electrical---light---sound---thermal---5.P.10.1---3|||Sound waves travel through which of the following mediums the fastest?---gases---liquids---plasma---solids---5.P.10.1---4|||Light waves travel through which of the following materials the fastest?---a cardboard box---a cement wall---a glass jar---vertical blinds---5.P.10.1---3|||Sound waves cannot travel through which of the following mediums?---gases---solids---space---water---5.P.10.1---3|||Which of the following is not a way that light reacts when it hits a surface?---absorbed---evaporated---reflected---transmitted---5.P.10.1---2|||Which type of energy involves the reaction of molecules?---light energy---mechanical energy---chemical energy---sound energy---5.P.10.1---3|||Which of the following forms of energy is most likely given off by a lamp?---heat and light---solar and sound---sound and chemical---sound and light---5.P.10.1---1';
+
+questions = questions.split("|||");
+
+for (var i = 0; i < questions.length; i++)
+{
+	questions[i] = questions[i].split("---");
+}

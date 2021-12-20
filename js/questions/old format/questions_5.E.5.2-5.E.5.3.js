@@ -1,0 +1,8 @@
+var questions = 'Which planet is the smallest in the solar system and is now referred to as a dwarf planet?---Earth---Jupiter---Pluto---Saturn---5.E.5.2/5.E.5.3---3|||Which planet is the closest in distance to the Sun?---Mars---Mercury---Pluto---Saturn---5.E.5.2/5.E.5.3---2|||Which two planets are the largest in the solar system?---Jupiter and Saturn---Mercury and Mars---Uranus and Neptune---Venus and Earth---5.E.5.2/5.E.5.3---1|||Which planet is the farthest away from the Sun?---Jupiter---Neptune---Pluto---Venus---5.E.5.2/5.E.5.3---3|||Which planet has a red spot that reveals a continuous storm?---Earth---Jupiter---Mars---Saturn---5.E.5.2/5.E.5.3---2|||Which planet has the obvious rings?---Earth---Jupiter---Mars---Saturn---5.E.5.2/5.E.5.3---4|||Which planet is known as the rusty planet because of the color of its red soil?---Jupiter---Mars---Neptune---Saturn---5.E.5.2/5.E.5.3---2|||Which of the following is not an inner planet?---Jupiter---Mars---Mercury---Venus---5.E.5.2/5.E.5.3---1|||Which of the following is an outer planet?---Earth---Mars---Uranus---Venus---5.E.5.2/5.E.5.3---3|||Which of the following represents the correct order of planets from the Sun?---Mars —> Jupiter —> Saturn---Mars —> Saturn —> Jupiter---Pluto —> Uranus —> Neptune---Venus —> Mercury —> Earth---5.E.5.2/5.E.5.3---1';
+
+questions = questions.split("|||");
+
+for (var i = 0; i < questions.length; i++)
+{
+	questions[i] = questions[i].split("---");
+}
